@@ -30,3 +30,10 @@ En un mundo cada vez más conectado, la información digital es uno de los activ
 
 La mayoría de los incidentes ocurren por errores humanos. Por eso, la **conciencia y formación** de usuarios y equipos de soporte es clave para mantener un entorno seguro.
 **El mayor vector de ataque en las empresas es los usuarios, los ataques de phishing(envio de emails que roban datos) es el mayor vector de entrada a una empresa.**
+
+
+🔺 El Triángulo CIA: los tres pilares fundamentales
+Pilar	Descripción
+Confidencialidad	Asegura que la información solo pueda ser accedida por personas autorizadas. Ej.: cifrado, control de acceso.
+Integridad	Garantiza que la información no ha sido alterada de forma no autorizada. Ej.: hash, firmas digitales.
+Disponibilidad	Asegura que los sistemas y datos estén accesibles cuando se necesiten. Ej.: redundancia, protección contra DDoS.
