@@ -13,28 +13,4 @@ Conceptos para empezar a trabajar en el mundo de la ciberseguridad mas orientado
 
 recursos: Enlaces, videos y libros para profundizar más.
 
-Extructura
 
-├── 01-introduccion/
-│   ├── que-es-ciberseguridad.md
-│   ├── importancia.md
-│   └── terminologia-basica.md
-├── 02-conceptos-clave/
-│   ├── amenazas.md
-│   ├── vulnerabilidades.md
-│   ├── ataques-comunes.md
-│   └── medidas-de-proteccion.md
-├── 03-herramientas-basicas/
-│   ├── antivirus.md
-│   ├── firewalls.md
-│   ├── herramientas-de-monitoreo.md
-│   └── tips-de-seguridad.md
-├── 04-procedimientos-tier1/
-│   ├── deteccion-de-incidentes.md
-│   ├── escalamiento.md
-│   └── reportes.md
-├── 05-glosario.md
-└── recursos/
-    ├── enlaces-utiles.md
-    ├── videos.md
-    └── libros.md
