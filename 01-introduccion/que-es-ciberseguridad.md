@@ -32,8 +32,38 @@ La mayoría de los incidentes ocurren por errores humanos. Por eso, la **concien
 **El mayor vector de ataque en las empresas es los usuarios, los ataques de phishing(envio de emails que roban datos) es el mayor vector de entrada a una empresa.**
 
 
-🔺 El Triángulo CIA: los tres pilares fundamentales
-Pilar	Descripción
-Confidencialidad	Asegura que la información solo pueda ser accedida por personas autorizadas. Ej.: cifrado, control de acceso.
-Integridad	Garantiza que la información no ha sido alterada de forma no autorizada. Ej.: hash, firmas digitales.
-Disponibilidad	Asegura que los sistemas y datos estén accesibles cuando se necesiten. Ej.: redundancia, protección contra DDoS.
+# Fundamentos de la Ciberseguridad: CIA, Autenticación y Autorización
+
+## 🔺 El Triángulo CIA
+
+El modelo **CIA** es la base fundamental de la ciberseguridad. Representa tres principios que toda estrategia de protección debe garantizar:
+
+| Pilar              | Descripción                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| **Confidencialidad** | Garantiza que solo las personas autorizadas puedan acceder a la información. Se logra con cifrado, autenticación, control de accesos, etc. |
+| **Integridad**       | Asegura que los datos no han sido alterados de forma no autorizada. Se logra con hashes, firmas digitales, controles de cambios. |
+| **Disponibilidad**   | Garantiza que los sistemas y datos estén accesibles cuando se necesiten. Se protege con backups, redundancia, protección contra ataques como DDoS. |
+
+---
+
+## 🔐 Autenticación y Autorización
+
+Aunque **autenticación** y **autorización** no forman parte directa del triángulo CIA, son esenciales para **garantizar la confidencialidad** y el control de acceso:
+
+| Concepto          | Descripción                                                             |
+|-------------------|-------------------------------------------------------------------------|
+| **Autenticación** | Verifica la identidad del usuario o sistema. Ejemplo: login con contraseña o MFA. |
+| **Autorización**  | Determina qué recursos o acciones están permitidos a ese usuario autenticado. Ejemplo: acceso de solo lectura o escritura. |
+
+---
+
+## 📌 Relación entre conceptos
+
+| Concepto         | Relacionado con...   | Ejemplo práctico                                |
+|------------------|----------------------|--------------------------------------------------|
+| Autenticación    | Confidencialidad     | El usuario se identifica con su contraseña       |
+| Autorización     | Confidencialidad     | El sistema permite o deniega acceso a un recurso |
+| Confidencialidad | Pilar del CIA        | Archivos cifrados y acceso restringido           |
+| Integridad       | Pilar del CIA        | Comparación de hashes para verificar archivos    |
+| Disponibilidad   | Pilar del CIA        | Servidores operativos y redundantes              |
+
