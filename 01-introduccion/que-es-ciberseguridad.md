@@ -29,4 +29,4 @@ En un mundo cada vez más conectado, la información digital es uno de los activ
 ## Rol de las personas en la ciberseguridad
 
 La mayoría de los incidentes ocurren por errores humanos. Por eso, la **conciencia y formación** de usuarios y equipos de soporte es clave para mantener un entorno seguro.
-El mayor vector de ataque en las empresas es los usuarios, los ataques de phishing(envio de emails que roban datos) es el mayor vector de entrada a una empresa.
+**El mayor vector de ataque en las empresas es los usuarios, los ataques de phishing(envio de emails que roban datos) es el mayor vector de entrada a una empresa.**
