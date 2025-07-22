@@ -39,9 +39,9 @@ Un SOC suele estar organizado en **niveles o capas (tiers)** con funciones espec
 
 ## Herramientas típicas en un SOC
 
-- **SIEM** (ej. Splunk, QRadar)
+- **SIEM** (ej. Splunk, QRadar, Chronicle, Sentinel, Elastic)
 - **EDR/XDR** (ej. CrowdStrike, Microsoft Defender XDR)
-- **SOAR** (ej. Cortex XSOAR, Splunk SOAR)
+- **SOAR** (ej. Cortex XSOAR, Splunk SOAR, Chronicle SOAR)
 - **Firewall / IPS / IDS**
 - **Sistemas de ticketing** (ej. ServiceNow, Jira)
 - **Threat Intelligence Platforms**
