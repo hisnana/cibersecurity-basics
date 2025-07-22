@@ -114,4 +114,39 @@ Capacitación del personal para identificar amenazas como phishing o ingeniería
 ---
 
 > ✅ *Un SOC no solo reacciona a ataques: también valida que estas medidas estén activas y funcionando correctamente.*
+>
+> # Mitigación en Ciberseguridad
+
+---
+
+## ¿Qué es Mitigación?
+
+La **mitigación** es el conjunto de acciones, controles y medidas que se implementan para reducir la probabilidad, el impacto o la gravedad de una amenaza o vulnerabilidad en un sistema o red.
+
+El objetivo es minimizar los daños y limitar las posibilidades de que un incidente de seguridad afecte la confidencialidad, integridad o disponibilidad de los activos.
+
+---
+
+## Tipos de Mitigación
+
+- **Preventiva:** Evitar que ocurra el ataque (ej. firewalls, parches, políticas de acceso).  
+- **Detectiva:** Identificar ataques o anomalías a tiempo (ej. SIEM, IDS/IPS, monitoreo).  
+- **Correctiva:** Responder y recuperar después de un incidente (ej. backups, planes de respuesta).  
+
+---
+
+## Ejemplos comunes de medidas de mitigación
+
+- Aplicar actualizaciones y parches regularmente.  
+- Configurar correctamente firewalls y sistemas de control de acceso.  
+- Implementar autenticación multifactor (MFA).  
+- Monitorear logs y eventos con herramientas SIEM.  
+- Capacitar a usuarios para evitar ataques de ingeniería social.  
+- Realizar copias de seguridad periódicas y pruebas de restauración.
+
+---
+
+> ⚠️ *La mitigación efectiva es clave para reducir riesgos y mantener la resiliencia ante ataques cibernéticos.*
+
+
 
