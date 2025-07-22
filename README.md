@@ -2,7 +2,7 @@
 Conceptos para empezar a trabajar en el mundo de la ciberseguridad mas orientado a TIER1.
 
 Agradeceria que me escribais si algun concepto no queda claro u os falta algun concepto que creeis necesario.
-Para todo ello teneis disponible el canal de telegram https://t.me/cibersecuritybasics
+Para cualquier sugerencia o petición teneis disponible el canal de telegram https://t.me/cibersecuritybasics
 
 01-introduccion: Conceptos básicos y terminología para empezar desde cero.
 
