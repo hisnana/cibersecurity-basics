@@ -5,7 +5,7 @@ Agradezco si algun concepto no queda claro u os falta algun concepto que creeis 
 Para cualquier sugerencia o petición teneis disponible el canal de telegram https://t.me/cibersecuritybasics
 
 Si valorais el proyecto podeis realizar donaciones: 
-https://www.paypal.com/donate/?hosted_button_id=9HSSXWJJ
+https://www.paypal.com/donate?hosted_button_id=9HSSXWJJFKCFE
 
 
 01-introduccion: Conceptos básicos y terminología para empezar desde cero.
