@@ -1,5 +1,7 @@
 # cibersecurity-basics
-Conceptos para empezar a trabajar en el mundo de la ciberseguridad mas orientado a TIER1
+Conceptos para empezar a trabajar en el mundo de la ciberseguridad mas orientado a TIER1.
+
+Agradeceria que me escribais si algun concepto no queda claro u os falta algun concepto que creeis necesario.
 
 01-introduccion: Conceptos básicos y terminología para empezar desde cero.
 
