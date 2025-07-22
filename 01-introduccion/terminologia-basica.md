@@ -345,6 +345,61 @@ Un **log** (registro) es un archivo o conjunto de datos que registra eventos, ac
 
 ---
 
-## Ejemplo simple de un log de sistema (Linux)
+# Definiciones Clave
+
+---
+
+## PCI DSS (Payment Card Industry Data Security Standard)
+
+Estándar de seguridad que establece requisitos para proteger la información de tarjetas de pago y prevenir fraudes. Aplica a todas las entidades que procesan, almacenan o transmiten datos de tarjetas.
+
+---
+
+## Ofuscar
+
+Técnica que consiste en modificar código o datos para hacerlo difícil de entender o analizar, con el fin de proteger propiedad intelectual o dificultar el análisis por parte de atacantes.
+
+---
+
+## P2P (Peer-to-Peer)
+
+Modelo de red donde los participantes (nodos) se comunican directamente entre sí, compartiendo recursos o información sin necesidad de un servidor central.
+
+---
+
+## SLA (Service Level Agreement)
+
+Acuerdo formal entre un proveedor de servicios y un cliente que define niveles de servicio, responsabilidades y métricas para asegurar la calidad y disponibilidad del servicio.
+
+
+# 0 Day (Zero Day)
+
+---
+
+## Definición
+
+Un **0 day** es una vulnerabilidad de seguridad en software o hardware que es desconocida para los desarrolladores o el público en general, y por lo tanto, no existe un parche o solución disponible en el momento de su descubrimiento.
+
+Los atacantes pueden aprovechar estas vulnerabilidades para realizar ataques antes de que se haya tomado alguna medida de mitigación.
+
+---
+
+## Características clave
+
+- Vulnerabilidad desconocida hasta su explotación o divulgación.  
+- Alta peligrosidad por la falta de defensa previa.  
+- Puede ser vendida en mercados clandestinos o usada en ataques dirigidos.
+
+---
+
+## Ejemplo
+
+- Un exploit que aprovecha una falla en un sistema operativo antes de que el fabricante publique un parche.
+
+---
+
+> ⚠️ *La gestión rápida y la actualización constante son esenciales para protegerse contra ataques 0 day.*
+
+
 
 
