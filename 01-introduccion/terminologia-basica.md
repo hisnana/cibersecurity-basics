@@ -315,4 +315,36 @@ Adoptada por empresas para certificar su gestión de seguridad y cumplir con reg
 
 > 📌 *Conocer y aplicar estas metodologías ayuda a construir defensas sólidas y gestionar la seguridad de forma organizada y efectiva.*
 
+# ¿Qué es un Log?
+
+---
+
+## Definición
+
+Un **log** (registro) es un archivo o conjunto de datos que registra eventos, acciones o mensajes generados por sistemas, aplicaciones o dispositivos de red. Los logs son esenciales para monitorear, auditar y diagnosticar el funcionamiento y la seguridad de un entorno informático.
+
+---
+
+## Conceptos clave
+
+- **Fuente:** Sistema operativo, aplicaciones, firewalls, routers, antivirus, etc.  
+- **Contenido típico:** Fecha y hora, usuario, tipo de evento, resultado, dirección IP, etc.  
+- **Uso principal:** Detección de incidentes, análisis forense, resolución de problemas y cumplimiento normativo.
+
+---
+
+## Ejemplos de logs comunes
+
+| Tipo de Log           | Descripción                            | Ejemplo                                   |
+|-----------------------|--------------------------------------|-------------------------------------------|
+| Logs de Sistema       | Eventos del sistema operativo          | Inicio o cierre de sesión, errores del sistema |
+| Logs de Seguridad     | Eventos relacionados con seguridad     | Intentos de login fallidos, accesos denegados |
+| Logs de Aplicaciones  | Registros generados por aplicaciones    | Transacciones, errores en la aplicación   |
+| Logs de Firewall      | Registro de tráfico de red filtrado     | Bloqueo de IP sospechosa                   |
+| Logs de Antivirus     | Eventos de detección y acción antimalware | Detección de malware, cuarentena de archivos |
+
+---
+
+## Ejemplo simple de un log de sistema (Linux)
+
 
