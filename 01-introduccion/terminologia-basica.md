@@ -49,3 +49,12 @@ Manipulación psicológica de personas para que revelen información o cometan e
 Uso de dos o más métodos para autenticar a un usuario, como contraseña + código SMS.
 
 ---
+
+
+**Algoritmos de cifrado **
+
+Operación o función matemática utilizada en combinación con una clave que 
+se aplica a un texto en claro y permite obtener un texto cifrado (o descifrarlo) 
+
+
+
