@@ -42,14 +42,11 @@ Dispositivo o software que filtra el tráfico de red según reglas de seguridad.
 ## 🧬 Hash
 Valor único generado a partir de datos. Se usa para verificar integridad de archivos y contraseñas.
 
-## 🧩 Ingeniería social
-Manipulación psicológica de personas para que revelen información o cometan errores de seguridad.
 
 ## 🔐 MFA (Multi-Factor Authentication)
 Uso de dos o más métodos para autenticar a un usuario, como contraseña + código SMS.
 
 ---
-
 
 **Algoritmos de cifrado **
 
