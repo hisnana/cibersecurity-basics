@@ -18,10 +18,10 @@ recursos: Enlaces, videos y libros para profundizar más.
 ### Clona este repositorio:
    ```bash
    git clone https://github.com/hisnana/cibersecurity-basics.git
+   ```
 
-###  Contribuciones
-```markdown
-## Contribuciones
+
+### Contribuciones
 ¡Las contribuciones son bienvenidas! Puedes ayudar de varias maneras:
 - Reportar errores o mejorar redacción.
 - Añadir nuevos ejemplos o amenazas emergentes.
@@ -30,6 +30,15 @@ recursos: Enlaces, videos y libros para profundizar más.
 
 ###Canal de telegram
 https://t.me/cibersecuritybasics
+
+## Recursos adicionales
+- [CISA Cybersecurity Basics Toolkit](https://www.cisa.gov/cybersecurity-basics) – Guías oficiales (en inglés)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) – Principales vulnerabilidades web
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+
+## Licencia
+Este proyecto está bajo la licencia MIT – consulta el archivo [LICENSE](LICENSE) para más detalles.
+
 
 
 
