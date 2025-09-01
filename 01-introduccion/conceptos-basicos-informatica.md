@@ -154,3 +154,117 @@ Conceptos como DHCP (asignación automática de IP), DNS (traducción de nombres
 - Conectar tu laptop al Wi-Fi de casa que asigna automáticamente una IP para que puedas navegar.
 
 ---
+
+## 🧩 NAT (Network Address Translation)
+
+Tecnología que permite que múltiples dispositivos en una red local compartan una sola IP pública para acceder a internet.  
+**Ejemplo práctico:**  
+- Tu router usa NAT para que todos los dispositivos de tu casa (móvil, PC, tablet) puedan navegar usando una única IP pública.
+
+---
+
+## 📡 DHCP (Dynamic Host Configuration Protocol)
+
+Protocolo que asigna automáticamente direcciones IP privadas y otros datos de configuración a los dispositivos en una red local.  
+**Ejemplo práctico:**  
+- Cuando conectas tu laptop al Wi-Fi, el router le asigna automáticamente una IP privada como `192.168.1.15`.
+
+---
+
+## 🔗 MAC Address (Dirección Física)
+
+Identificador único asignado a la tarjeta de red de un dispositivo para identificarlo dentro de una red local.  
+**Ejemplo práctico:**  
+- Cada dispositivo tiene una MAC única, como `00:1A:2B:3C:4D:5E`, que usan los switches para enviar datos correctamente.
+
+---
+
+## 🧮 CPU (Unidad Central de Procesamiento)
+
+El "cerebro" del computador que realiza todas las operaciones y cálculos.  
+**Ejemplo práctico:**  
+- Cuando abres un programa o guardas un archivo, la CPU procesa esas instrucciones.
+
+---
+
+## 🧠 RAM (Memoria de Acceso Aleatorio)
+
+Memoria temporal donde el sistema guarda datos y programas mientras están en uso para acceso rápido.  
+**Ejemplo práctico:**  
+- Abrir muchas pestañas en el navegador consume RAM, y si se acaba, el computador puede volverse lento.
+
+---
+
+## 💽 Disco Duro / SSD
+
+Dispositivo de almacenamiento permanente donde se guardan archivos, programas y sistema operativo.  
+**Ejemplo práctico:**  
+- Guardar fotos, videos y documentos en el disco duro de tu computadora o en un SSD para acceso rápido.
+
+---
+
+## 🖥️ Cliente y Servidor
+
+- **Cliente:** Dispositivo o programa que solicita servicios o recursos.  
+- **Servidor:** Dispositivo o programa que ofrece servicios o recursos a los clientes.
+
+**Ejemplo práctico:**  
+- Cuando visitas un sitio web, tu navegador (cliente) solicita la página al servidor web que la aloja.
+
+---
+
+## 🔒 Firewall Personal
+
+Software o hardware que controla el tráfico entrante y saliente para proteger tu computadora de accesos no autorizados.  
+**Ejemplo práctico:**  
+- Windows Defender Firewall bloquea programas sospechosos que intentan conectarse a internet sin permiso.
+
+---
+
+## 📶 Wi-Fi
+
+Tecnología para conectarse a una red local o internet de forma inalámbrica.  
+**Ejemplo práctico:**  
+- Conectar tu móvil o laptop a la red Wi-Fi de casa para navegar sin cables.
+
+---
+
+## ⚙️ Configuración de Proxy
+
+Servidor intermediario que actúa entre un cliente y un servidor para filtrar, controlar o anonimizar tráfico de red.  
+**Ejemplo práctico:**  
+- En algunas empresas, el acceso a internet pasa por un proxy para controlar qué sitios web pueden visitarse.
+
+---
+
+## 🛡️ Antivirus y Antimalware
+
+Programas diseñados para detectar, bloquear y eliminar software malicioso.  
+**Ejemplo práctico:**  
+- Microsoft Defender o Avast escanean y eliminan virus que puedan infectar tu PC.
+
+---
+
+## 🧮 Software de Oficina
+
+Aplicaciones para crear documentos, hojas de cálculo y presentaciones.  
+**Ejemplo práctico:**  
+- Microsoft Word para escribir textos, Excel para gestionar datos.
+
+---
+
+## 🧩 Aplicaciones o Apps
+
+Programas diseñados para realizar tareas específicas, ya sea en computadoras o dispositivos móviles.  
+**Ejemplo práctico:**  
+- WhatsApp para enviar mensajes, Google Chrome para navegar.
+
+---
+
+## 🧹 Mantenimiento Básico de PC
+
+Tareas como limpieza física del hardware, actualización de software y eliminación de archivos temporales para mantener el equipo funcionando bien.  
+**Ejemplo práctico:**  
+- Borrar archivos temporales y desfragmentar disco para mejorar rendimiento.
+
+---
