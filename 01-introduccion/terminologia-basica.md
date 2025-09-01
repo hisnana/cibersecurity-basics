@@ -400,6 +400,77 @@ Los atacantes pueden aprovechar estas vulnerabilidades para realizar ataques ant
 
 > ⚠️ *La gestión rápida y la actualización constante son esenciales para protegerse contra ataques 0 day.*
 
+### 📌 IOC (Indicator of Compromise)
+Indicador que señala que un sistema puede haber sido **comprometido**.
 
+**Ejemplos:**  
+- Dirección IP maliciosa  
+- Hash de archivo sospechoso  
+- Usuario creado sin autorización
 
+---
+
+### 🧰 TTPs (Tactics, Techniques and Procedures)
+Conjunto de **tácticas, técnicas y procedimientos** utilizados por atacantes, especialmente documentados por MITRE ATT&CK.
+
+**Ejemplo:**  
+Uso de PowerShell para descargar y ejecutar malware sin levantar alertas.
+
+---
+
+### 🌐 Seguridad Perimetral
+Protección de la red en sus límites externos mediante firewalls, IDS/IPS y otras herramientas para evitar accesos no autorizados.
+
+---
+
+### ☁️ Seguridad en la Nube
+Conjunto de prácticas y tecnologías para proteger datos y servicios alojados en plataformas como AWS, Azure o Google Cloud.
+
+**Ejemplos:**  
+- Control de accesos (IAM)  
+- Cifrado en tránsito y reposo  
+- Auditorías y monitoreo continuo
+
+---
+
+### 🔒 VPN (Virtual Private Network)
+Tecnología que permite crear una **conexión segura y cifrada** entre el dispositivo del usuario y la red de la empresa.
+
+**Ejemplo:**  
+Un empleado accede a recursos internos desde casa a través de una VPN corporativa.
+
+---
+
+### 🧱 Seguridad Zero Trust
+Modelo de seguridad que se basa en la premisa de "**nunca confiar, siempre verificar**", incluso dentro de la red interna.
+
+**Principios clave:**  
+- Verificación continua de identidad  
+- Acceso mínimo necesario  
+- Supervisión constante
+
+---
+
+### 📤 DLP (Data Loss Prevention)
+Tecnologías y políticas diseñadas para **prevenir la fuga o pérdida de datos sensibles**.
+
+**Ejemplo:**  
+Bloquear el envío de información confidencial por correo electrónico a direcciones externas.
+
+---
+### 🔧 Hardening
+Proceso de **reforzar la seguridad de sistemas** eliminando configuraciones innecesarias, cerrando puertos y aplicando parches.
+
+**Ejemplo:**  
+Desactivar servicios que no se usan, restringir el acceso por SSH solo a ciertas IPs.
+
+---
+
+### 🔍 Threat Intelligence (Inteligencia de amenazas)
+Información recopilada sobre amenazas actuales y futuras, usada para **anticipar ataques y mejorar la defensa**.
+
+**Ejemplo:**  
+Conocer que una IP está asociada a ransomware y bloquearla preventivamente en el firewall.
+
+---
 
