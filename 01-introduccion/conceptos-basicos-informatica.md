@@ -1,4 +1,4 @@
-# Conceptos Básicos de Informática para Prepararse a Tier 1
+# Conceptos Básicos de Informática para prepararse a Tier 1
 
 Este apartado está pensado para personas sin estudios en informática que desean construir una base sólida para desempeñarse en roles Tier 1 de ciberseguridad.
 
