@@ -1,6 +1,8 @@
 # cibersecurity-basics
 **Conceptos básicos para adentrarse en el mundo de la ciberseguridad (nivel TIER 1)**
 
+Consejos: Lo ideal es realizar antes un FP o curso básico de informática, si no lo tienes, trabaja duro para entender estos [conceptos](https://github.com/hisnana/cibersecurity-basics/blob/main/01-introduccion/conceptos-basicos-informatica.md)
+
 
 01-introduccion: Conceptos básicos y terminología para empezar desde cero.
 
