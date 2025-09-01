@@ -1,11 +1,5 @@
 # cibersecurity-basics
-Conceptos para empezar a trabajar en el mundo de la ciberseguridad mas orientado a TIER1.
-
-Agradezco si algun concepto no queda claro u os falta algun concepto que creeis necesario podeis comentarlo en nuestro grupo de telegram.
-Para cualquier sugerencia o petición teneis disponible el canal de telegram https://t.me/cibersecuritybasics
-
-Si valorais el proyecto podeis realizar donaciones: 
-https://www.paypal.com/donate?hosted_button_id=9HSSXWJJFKCFE
+**Conceptos básicos para adentrarse en el mundo de la ciberseguridad (nivel TIER 1)**
 
 
 01-introduccion: Conceptos básicos y terminología para empezar desde cero.
@@ -19,5 +13,24 @@ https://www.paypal.com/donate?hosted_button_id=9HSSXWJJFKCFE
 05-glosario.md: Definición rápida de términos técnicos para consulta rápida.
 
 recursos: Enlaces, videos y libros para profundizar más.
+
+## Cómo usarlo
+### Clona este repositorio:
+   ```bash
+   git clone https://github.com/hisnana/cibersecurity-basics.git
+
+###  Contribuciones
+```markdown
+## Contribuciones
+¡Las contribuciones son bienvenidas! Puedes ayudar de varias maneras:
+- Reportar errores o mejorar redacción.
+- Añadir nuevos ejemplos o amenazas emergentes.
+- Sugerir herramientas útiles o mejorar el checklist.
+- Aceptamos donaciones para mantener la motivación en este proyecto: https://www.paypal.com/donate?hosted_button_id=9HSSXWJJFKCFE
+
+###Canal de telegram
+https://t.me/cibersecuritybasics
+
+
 
 
