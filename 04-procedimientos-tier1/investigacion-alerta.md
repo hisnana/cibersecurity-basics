@@ -1,27 +1,38 @@
 # 🕵️‍♂️ Proceso de Investigación de una Alerta (con ejemplos y herramientas)
 
-Este diagrama muestra el flujo habitual que sigue un analista de SOC para investigar una alerta, incluyendo **qué fijarse** y **herramientas útiles** en cada paso.
+Este diagrama muestra el flujo típico que sigue un analista de SOC para investigar una alerta, incluyendo **qué fijarse** y **herramientas útiles** en cada paso.  
+Se incluye la posibilidad de **escalar, notificar al cliente o cerrar como falso positivo** según el análisis.
 
 ```mermaid
 flowchart TD
     %% Fuentes de alerta
-    SIEM[SIEM / Correlación de eventos] --> Analista[Analista recibe alerta\n(Ej: Evento anómalo de firewall, alerta EDR)]
+    SIEM[SIEM / Correlación de eventos] --> Analista[Recibe alerta]
     EDR[EDR / Endpoint Detection] --> Analista
     Logs[Logs de red y aplicaciones] --> Analista
 
     %% Investigación inicial
-    Analista --> Recolectar[Recolecta información\n- Fijarse en IP, usuario, endpoint, timestamp\n- Herramientas: Kibana, Splunk, ELK, Wireshark]
-    Recolectar --> Enriquecer[Enriquecer con Threat Intelligence\n- Verificar IOC, reputación IP, dominios sospechosos\n- Herramientas: MISP, VirusTotal, OpenCTI]
+    Analista --> Recolectar[Recolecta información]
+    Recolectar --> Fijarse[Fijarse en IP, usuario, endpoint, timestamp]
+    Fijarse --> Herramientas1[Kibana, Splunk, ELK, Wireshark]
 
-    %% Análisis y decisión
-    Enriquecer --> Analizar[Analiza contexto y criticidad\n- Tipo de amenaza, impacto potencial, patrones similares\n- Herramientas: MITRE ATT&CK, SIEM dashboards, Python scripts]
+    Recolectar --> Enriquecer[Enriquecer con Threat Intelligence]
+    Enriquecer --> Herramientas2[MISP, VirusTotal, OpenCTI]
+
+    Enriquecer --> Analizar[Analiza contexto y criticidad]
+    Analizar --> Herramientas3[MITRE ATT&CK, SIEM dashboards, Python scripts]
+
+    %% Decisión principal
     Analizar --> Decision{¿Es amenaza real?}
-    Decision -->|Sí| Escalar[Escala a Tier 2 / equipo especializado\n- Adjuntar evidencia y contexto\n- Herramientas: TheHive, Jira, Confluence]
-    Decision -->|No| Cerrar[Cierra como falso positivo\n- Documentar razones, ajustar reglas de detección\n- Herramientas: SIEM, repositorios internos]
+    Decision -->|Sí| Escalar[Escala a Tier 2 / equipo especializado]
+    Decision -->|Notificar| Notificar[Notifica al cliente / área afectada]
+    Decision -->|No| Cerrar[Falso positivo / cierre]
 
     %% Acciones tras escalado
-    Escalar --> Mitigar[Implementa medidas de mitigación o contención\n- Bloqueo de IP, cuarentena de endpoint, cambio de credenciales\n- Herramientas: Firewall, EDR, scripts de automatización]
-    Mitigar --> Documentar[Documenta hallazgos en TheHive / sistema de gestión\n- Adjuntar logs, screenshots, IOC y recomendaciones]
+    Escalar --> Mitigar[Implementa medidas de mitigación o contención]
+    Mitigar --> Documentar[Documenta hallazgos en TheHive / sistema de gestión]
+
+    %% Acciones tras notificación
+    Notificar --> Documentar
 
     %% Acciones tras cierre
     Cerrar --> Documentar
