@@ -73,7 +73,3 @@ Los casos de uso (use cases) en un SOC muestran **cómo se aplican las herramien
 - Incluir **ejemplos de logs y alertas generadas** para referencia.  
 
 ---
-
-## 5️⃣ Flujo visual de un caso de uso (opcional)
-
-Se puede complementar con un **diagrama Mermaid** donde se vea cómo fluye un caso de uso desde la **detección hasta la respuesta**, integrando SIEM, SOAR, EDR y TheHive.
