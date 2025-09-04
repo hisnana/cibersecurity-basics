@@ -8,7 +8,7 @@ flowchart TD
     B --> C{Necesita escalar?}
     C -->|Sí| D[Escala a Tier 2]
     C -->|No| E[Cierra como falso positivo]
-ˋˋˋ
+```
 ---
 ## 🖼️ Flujo SOC Básico
 
@@ -22,5 +22,5 @@ flowchart TD
     XSOAR -->|Crea caso| TheHive["TheHive (Gestión de incidentes)"]
     TheHive -->|Asignación y análisis| Analista["Analista SOC"]
     Analista -->|Feedback de investigación| MISP
-ˋˋˋ 
+```
 
