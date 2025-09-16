@@ -1,5 +1,5 @@
 
-# 📜 Ejemplos de Logs y Qué Fijarse en Ellos
+# 📜 Ejemplos de Logs y 1ué fijarse en ellos
 
 Los logs son la base para la investigación de alertas en un SOC. A continuación se muestran ejemplos de diferentes tipos de logs y los puntos clave que un analista debe revisar.
 
