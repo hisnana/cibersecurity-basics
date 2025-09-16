@@ -10,30 +10,77 @@ Su objetivo principal es **proteger la infraestructura de TI** de una organizaci
 
 Un SOC suele estar organizado en **niveles o capas (tiers)** con funciones específicas:
 
-### 🧑‍💻 Nivel 1 - Analistas de monitoreo (Tier 1)
-- Monitorean alertas en tiempo real (SIEM, EDR, etc.).
-- Realizan triage inicial: determinan si una alerta es real o un falso positivo.
-- Escalan incidentes si es necesario.
+# Roles comunes en un SOC (Centro de Operaciones de Seguridad)
 
-### 🕵️ Nivel 2 - Analistas de investigación/Correlación o Threat Modeling (Tier 2)
-- Analizan incidentes confirmados con mayor profundidad.
-- Correlacionan datos de múltiples fuentes (XDR, logs, tráfico de red).
-- Realizan contención manual (bloqueo de IPs, aislamiento de equipos).
+## 1. Analista de Seguridad - Nivel 1 (Tier 1)
+- Monitorea alertas de seguridad y eventos.
+- Realiza la primera clasificación y escalado de incidentes.
+- Ejecuta análisis básicos y confirma falsos positivos.
 
-### 🧠 Nivel 3 - Analistas de amenazas / Threat Hunters (Tier 3)
-- Proactivos: buscan amenazas que no hayan generado alertas.
-- Usan inteligencia de amenazas (Threat Intelligence).
-- Mejoran reglas y detección del SIEM o EDR.
+## 2. Analista de Seguridad - Nivel 2 (Tier 2) / Equipo de Correlación y Threat Modeling
+- Investiga incidentes complejos.
+- Realiza análisis forense y respuesta a incidentes.
+- Correlaciona datos de múltiples fuentes para identificar amenazas.
+- Desarrolla y mantiene modelos de amenazas (threat modeling) para anticipar posibles vectores de ataque.
+- Crea y ajusta reglas de correlación para mejorar la detección de incidentes sofisticados.
 
-### 🛠️ Ingenieros de seguridad
-- Mantienen las herramientas del SOC (SIEM, SOAR, firewalls, etc.).
-- Automatizan procesos (SOAR).
-- Ayudan a integrar nuevas fuentes de datos.
+## 3. Analista de Seguridad - Nivel 3 (Tier 3) / Experto en Incidentes
+- Maneja incidentes críticos y avanzados.
+- Diseña y mejora procesos de detección y respuesta.
+- Colabora en la definición de estrategias de seguridad.
 
-### 👨‍✈️ Jefe del SOC / Coordinador
-- Supervisa al equipo y coordina la respuesta a incidentes graves.
-- Informa al CISO (Chief Information Security Officer).
-- Define procedimientos y asegura cumplimiento de normativas.
+## 4. Ingeniero de Seguridad / Arquitecto SOC
+- Diseña y mantiene la infraestructura del SOC.
+- Configura y optimiza herramientas de seguridad (SIEM, IDS/IPS).
+- Implementa reglas y casos de uso para detección.
+
+## 5. Gerente o Líder del SOC
+- Supervisa operaciones y personal del SOC.
+- Coordina la comunicación con otras áreas y la alta dirección.
+- Define políticas, procesos y métricas del SOC.
+
+## 6. Ciberinteligencia (Cyber Intelligence)
+- Recopila y analiza información sobre amenazas actuales y emergentes.
+- Proporciona contexto para priorizar y enriquecer alertas.
+- Trabaja con equipos de respuesta para anticipar ataques.
+
+## 7. Desarrollador / Ingeniero DevOps SOAR
+- Diseña y mantiene automatizaciones y orquestaciones en plataformas SOAR.
+- Integra herramientas de seguridad y automatiza flujos de trabajo.
+- Optimiza la eficiencia operativa del SOC mediante desarrollo y despliegue continuo.
+
+## 8. Especialista en Forense Digital
+- Realiza análisis detallados de incidentes y recuperación de evidencia.
+- Apoya en investigaciones internas y cumplimiento legal.
+
+## 9. Especialista en Gestión de Vulnerabilidades
+- Escanea y evalúa vulnerabilidades en sistemas y aplicaciones.
+- Prioriza remediaciones y comunica riesgos a equipos técnicos.
+
+## 10. Especialista en Cumplimiento y Auditoría
+- Asegura que el SOC cumpla con normativas y estándares.
+- Realiza auditorías y reporta hallazgos.
+
+---
+
+## Resumen en tabla
+
+| Rol                         | Descripción breve                                                                                   |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| Analista de Seguridad Tier 1| Monitoreo y primer análisis de alertas                                                           |
+| Analista de Seguridad Tier 2| Investigación, análisis profundo, correlación de datos y desarrollo de modelos de amenazas       |
+| Analista de Seguridad Tier 3| Manejo de incidentes críticos y estrategia                                                       |
+| Ingeniero / Arquitecto SOC  | Diseño y mantenimiento de infraestructura y herramientas                                        |
+| Gerente / Líder SOC         | Gestión del equipo y estrategia global del SOC                                                   |
+| Ciberinteligencia           | Análisis y provisión de inteligencia sobre amenazas                                             |
+| DevOps / Desarrollador SOAR | Automatización y orquestación de procesos de seguridad                                          |
+| Forense Digital             | Análisis de incidentes y recuperación de evidencia                                              |
+| Gestión de Vulnerabilidades | Evaluación y priorización de vulnerabilidades                                                    |
+| Cumplimiento y Auditoría    | Aseguramiento de cumplimiento normativo y auditorías                                             |
+
+
+
+
 
 ---
 
