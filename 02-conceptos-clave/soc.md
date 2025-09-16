@@ -15,7 +15,7 @@ Un SOC suele estar organizado en **niveles o capas (tiers)** con funciones espec
 - Realizan triage inicial: determinan si una alerta es real o un falso positivo.
 - Escalan incidentes si es necesario.
 
-### 🕵️ Nivel 2 - Analistas de investigación (Tier 2)
+### 🕵️ Nivel 2 - Analistas de investigación/Correlación o Threat Modeling (Tier 2)
 - Analizan incidentes confirmados con mayor profundidad.
 - Correlacionan datos de múltiples fuentes (XDR, logs, tráfico de red).
 - Realizan contención manual (bloqueo de IPs, aislamiento de equipos).
