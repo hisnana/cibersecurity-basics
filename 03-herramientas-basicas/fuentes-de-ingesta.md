@@ -106,3 +106,116 @@ La **ingesta de logs** es el proceso mediante el cual un SIEM recibe y recopila 
 
 ---
 
+# Integración de Logs en SIEMs: Detalles y Datos Prácticos
+
+La **integración de logs** en un SIEM es un paso fundamental para garantizar la visibilidad de la seguridad dentro de una organización. Este proceso implica configurar, recolectar y normalizar datos de diversas fuentes para su análisis y correlación.
+
+---
+
+## 1. **¿Qué implica la integración de logs?**
+
+- **Recolectar** logs desde múltiples dispositivos y aplicaciones.
+- **Transportar** los logs de forma segura y confiable al SIEM.
+- **Normalizar** y estructurar los datos para análisis eficiente.
+- **Correlacionar** eventos para detectar incidentes de seguridad.
+
+---
+
+## 2. **Fuentes comunes y métodos de integración**
+
+| Fuente                      | Método de Integración                    | Protocolo / Herramienta               | Notas Prácticas                                      |
+|----------------------------|----------------------------------------|-------------------------------------|-----------------------------------------------------|
+| Sistemas Windows            | Windows Event Forwarding (WEF), Agentes | WMI, Winlogbeat, NXLog               | WEF permite enviar eventos a un servidor central.   |
+| Linux / Unix                | Syslog, agentes                        | Syslog (UDP/TCP), Filebeat, NXLog   | Agentes pueden leer archivos `/var/log/`.            |
+| Firewalls                  | Syslog, APIs                           | Syslog, APIs específicas             | Configurar niveles de logging para no saturar.       |
+| Routers / Switches          | Syslog                               | Syslog (UDP/TCP)                     | Verificar compatibilidad con formatos.               |
+| IDS/IPS                    | Syslog, APIs                          | Syslog, APIs específicas             | Integrar alertas críticas para detección rápida.     |
+| Active Directory            | Agentes, APIs                        | Winlogbeat, LDAP Queries             | Extraer logs de eventos de autenticación.            |
+| Servidores Web             | Lectura de logs, agentes              | Filebeat, NXLog                      | Manejar logs rotativos para no perder datos.         |
+| Bases de Datos             | APIs, agentes                         | Conectores específicos               | Logs de auditoría pueden ser pesados, filtrar.       |
+| Cloud Platforms            | APIs, agentes                        | AWS CloudTrail, Azure Monitor        | Configurar permisos mínimos necesarios.              |
+| Endpoints (Antivirus/EDR) | Agentes, APIs                        | Agentes EDR, Syslog                  | Agentes ligeros para no impactar rendimiento.        |
+
+---
+
+## 3. **Herramientas y agentes populares para ingesta**
+
+- **Filebeat / Winlogbeat (Elastic Stack)**  
+  - Envían logs directamente a Elasticsearch o Logstash.  
+  - Configurables para diferentes fuentes y formatos.
+
+- **NXLog**  
+  - Soporta Windows, Linux y otras plataformas.  
+  - Permite recolección avanzada, filtrado y transformación.
+
+- **Splunk Universal Forwarder**  
+  - Envía datos a Splunk Enterprise.  
+  - Optimizado para bajo impacto en los sistemas.
+
+- **Syslog-ng / rsyslog**  
+  - Daemon para recolección y reenvío de logs en Linux/Unix.  
+  - Compatible con formatos personalizados.
+
+---
+
+## 4. **Protocolos y formatos comunes**
+
+- **Syslog (RFC 3164 / RFC 5424)**  
+  - Protocolo estándar para envío de logs.  
+  - Puede ser UDP (menos seguro) o TCP/TLS (más seguro).
+
+- **CEF (Common Event Format)**  
+  - Formato estandarizado para eventos de seguridad.  
+  - Facilita normalización en SIEM.
+
+- **LEEF (Log Event Extended Format)**  
+  - Similar a CEF, usado por IBM QRadar.
+
+- **JSON / XML**  
+  - Formatos estructurados para aplicaciones modernas y APIs.
+
+---
+
+## 5. **Prácticas recomendadas para integración**
+
+- **Seguridad en la transmisión**  
+  - Usar TLS para proteger los logs en tránsito.  
+  - Evitar UDP si la pérdida de datos es crítica.
+
+- **Filtrado y reducción**  
+  - Configurar fuentes para enviar solo logs relevantes.  
+  - Evitar saturar el SIEM con datos irrelevantes.
+
+- **Normalización y parsing**  
+  - Usar parsers para estructurar datos en campos útiles.  
+  - Aprovechar reglas predefinidas o personalizadas.
+
+- **Sincronización horaria**  
+  - Asegurar que todos los dispositivos tengan NTP sincronizado.  
+  - Importante para correlación temporal correcta.
+
+- **Pruebas y validación**  
+  - Validar que los logs llegan correctamente y contienen datos esperados.  
+  - Monitorear errores en agentes y pérdidas de datos.
+
+---
+
+## 6. **Ejemplo básico de integración con Filebeat para Linux**
+
+1. Instalar Filebeat en servidor Linux.
+2. Configurar el archivo `filebeat.yml` para leer `/var/log/syslog`.
+3. Configurar la salida hacia el SIEM (ej. Elasticsearch o Logstash).
+4. Iniciar el servicio Filebeat.
+5. Verificar en el SIEM que los logs llegan correctamente.
+
+```yaml
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/syslog
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch.local:9200"]
+````
+
