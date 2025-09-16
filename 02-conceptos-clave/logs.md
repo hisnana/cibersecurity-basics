@@ -115,3 +115,141 @@ Esta tabla resume los principales tipos de logs que se encuentran en un SOC, los
 - Documentar **IPs, usuarios, endpoints y timestamps** en la investigación.  
 - Revisar **frecuencia y contexto**, no solo eventos aislados.  
 - Normalizar logs usando herramientas SIEM para análisis eficiente.
+- 
+# 📚 Formatos de Logs: Guía Completa
+
+Existen varios **formatos de logs** dependiendo del sistema, la tecnología usada y el propósito del registro. Los logs pueden almacenarse en texto plano, estructuras estándar o formatos binarios.
+
+---
+
+## 🗂️ 1. Logs en Texto Plano (Plain Text)
+
+Son los más comunes y sencillos de leer y procesar.
+
+### 📄 Formato Tradicional (line-based)
+
+- Cada línea representa un evento.
+- Separación por espacios, tabuladores o delimitadores como `|`, `:` o `;`.
+
+**Ejemplo (Apache access log):**
+
+127.0.0.1 - - [16/Sep/2025:12:45:22 +0200] "GET /index.html HTTP/1.1" 200 1024
+
+
+---
+
+## 🧾 2. Formatos Estructurados (Recomendados)
+
+### ✅ JSON (JavaScript Object Notation)
+
+- Muy usado en aplicaciones modernas, microservicios y SIEMs.
+- Fácil de leer, enviar por red, indexar y procesar.
+
+```json
+{
+  "timestamp": "2025-09-16T12:45:22Z",
+  "level": "INFO",
+  "service": "auth-service",
+  "user": "admin",
+  "event": "login_success",
+  "ip": "192.168.1.1"
+}
+```
+### ✅ XML
+
+Menos común hoy, pero todavía usado en entornos legacy.  
+Verboso, pero estructurado.
+
+```xml
+<log>
+  <timestamp>2025-09-16T12:45:22Z</timestamp>
+  <level>ERROR</level>
+  <message>Failed login</message>
+  <user>admin</user>
+</log>
+
+```
+
+## 📡 3. Formatos Estándar para Logs de Sistemas
+
+### 🧱 Syslog (RFC 5424)
+
+- Estándar para logs en sistemas Unix/Linux.
+- Muy usado en servidores, dispositivos de red y seguridad.
+
+**Ejemplo:**
+
+<34>1 2025-09-16T12:45:22Z server1 appname 1234 ID47 [exampleSDID@32473 iut="3"] Login successful
+
+
+---
+
+### 💬 CEF (Common Event Format – ArcSight)
+
+- Usado para logs de seguridad.
+- Estructura semi-estructurada con delimitadores `|`.
+
+**Ejemplo:**
+
+CEF:0|Vendor|Product|Version|Signature ID|Name|Severity|key1=value1 key2=value2
+
+
+---
+
+### 🔐 LEEF (Log Event Extended Format – IBM QRadar)
+
+- Similar a CEF, optimizado para QRadar SIEM.
+
+**Ejemplo:**
+
+LEEF:2.0|Vendor|Product|Version|EventID|key=value key2=value2
+
+
+---
+
+## 🧪 4. Binarios o Propietarios
+
+Algunos sistemas guardan logs en formatos binarios o bases de datos internas.
+
+| Sistema / Software     | Tipo de Log                         |
+|-----------------------|-----------------------------------|
+| Windows Event Logs     | Binario (.evtx)                   |
+| MySQL / PostgreSQL     | Archivos propios o registros en tablas |
+| Weblogic, SAP, Oracle  | Logs propietarios                 |
+
+---
+
+## 🔧 5. Otros Formatos Específicos
+
+| Formato   | Usado en...                         |
+|-----------|-----------------------------------|
+| CSV       | Simple, tabular, exportable a Excel |
+| YAML      | Algunos sistemas modernos / DevOps  |
+| Protobuf  | Logs binarios compactos (telemetría, IoT) |
+
+---
+
+## 📌 ¿Qué Formato Deberías Usar?
+
+| Necesidad                          | Formato Recomendado           |
+|-----------------------------------|------------------------------|
+| Fácil lectura manual              | Texto plano, CSV              |
+| Integración con sistemas modernos | JSON, Syslog                 |
+| Seguridad y cumplimiento (SIEM)   | CEF, LEEF, JSON estructurado |
+| Alta eficiencia / bajo ancho de banda | Protobuf, Binario          |
+
+---
+
+## 🧩 Conclusión
+
+No hay un único formato de logs. Depende del caso de uso.  
+Hoy en día, lo más recomendable es:
+
+- ✅ JSON para aplicaciones modernas  
+- ✅ Syslog para sistemas y red  
+- ✅ CEF / LEEF para seguridad y SIEM  
+- ✅ Texto plano / CSV para entornos simples o legados  
+
+⚠️ Lo más importante es que los logs sean **estructurados, consistentes, legibles y protegidos**.
+
+
